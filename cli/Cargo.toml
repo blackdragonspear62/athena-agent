@@ -1,0 +1,58 @@
+[package]
+name = "athena-cli"
+version = "2.0.0"
+edition = "2021"
+authors = ["Athena Team"]
+description = "CLI tool for Athena Agent - Intelligent Multi-Agent Orchestration Platform"
+license = "MIT"
+repository = "https://github.com/yourusername/athena-agent"
+keywords = ["ai", "agent", "cli", "automation", "skills"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+# CLI framework
+clap = { version = "4.4", features = ["derive", "env"] }
+clap_complete = "4.4"
+
+# Async runtime
+tokio = { version = "1.35", features = ["full"] }
+
+# HTTP client
+reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Terminal UI
+colored = "2.1"
+indicatif = "0.17"
+dialoguer = "0.11"
+console = "0.15"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Configuration
+config = "0.14"
+dirs = "5.0"
+toml = "0.8"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Utilities
+chrono = { version = "0.4", features = ["serde"] }
+url = "2.5"
+uuid = { version = "1.6", features = ["v4", "serde"] }
+
+[[bin]]
+name = "athena"
+path = "src/main.rs"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
