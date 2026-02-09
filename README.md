@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Athena Logo](docs/assets/athena-banner.png)
+Official Account On X : https://x.com/athenamulti20
 
 **Intelligent Multi-Agent Orchestration Platform**
 
