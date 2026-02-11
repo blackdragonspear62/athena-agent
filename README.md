@@ -3,7 +3,6 @@
 <div align="center">
 
 Official Account On X : https://x.com/athenamulti20
-CA :4JVjJcSZRtwJx6HEV3yzWC3Pgt5dRbVgScxaP4Nypump
 
 **Intelligent Multi-Agent Orchestration Platform**
 
